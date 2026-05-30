@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spatial Ecology | Ernest Asamoah</title>
+  <title>Ernest — Spatial Ecologist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -27,7 +27,6 @@
     }
 
     html { scroll-behavior: smooth; }
-
     body {
       font-family: var(--sans);
       background: var(--bg);
@@ -36,10 +35,9 @@
       font-size: 15px;
       -webkit-font-smoothing: antialiased;
     }
-
     a { color: inherit; text-decoration: none; }
 
-    /* ─── NAV ─── */
+    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(13,15,14,0.88);
@@ -50,147 +48,82 @@
       padding: 0 max(2rem, calc((100vw - 960px)/2));
       justify-content: space-between;
     }
-    .nav-brand {
-      font-family: var(--serif);
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      color: var(--text);
-    }
+    .nav-brand { font-family: var(--serif); font-size: 1rem; font-weight: 600; }
     .nav-links { display: flex; gap: 1.75rem; list-style: none; }
     .nav-links a {
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--text-mid);
-      transition: color 0.15s;
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-mid); transition: color 0.15s;
     }
     .nav-links a:hover { color: var(--green); }
 
-    /* ─── LAYOUT ─── */
-    .wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
+    /* LAYOUT */
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 2rem; }
 
-    /* ─── HERO ─── */
-    #hero {
-      padding: 130px 0 80px;
-      border-bottom: 1px solid var(--border);
-    }
+    /* HERO */
+    #hero { padding: 130px 0 80px; border-bottom: 1px solid var(--border); }
     .hero-grid {
       display: grid;
-      grid-template-columns: 1fr 260px;
-      gap: 3rem;
-      align-items: start;
+      grid-template-columns: 1fr 240px;
+      gap: 3rem; align-items: start;
     }
     .hero-tag {
       display: inline-block;
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
       color: var(--green);
       border: 1px solid rgba(125,186,138,0.3);
-      border-radius: 20px;
-      padding: 3px 10px;
-      margin-bottom: 1.4rem;
+      border-radius: 20px; padding: 3px 10px; margin-bottom: 1.4rem;
     }
     h1 {
       font-family: var(--serif);
       font-size: clamp(2rem, 4.5vw, 3rem);
-      font-weight: 600;
-      line-height: 1.1;
-      letter-spacing: -0.01em;
-      margin-bottom: 1.25rem;
+      font-weight: 600; line-height: 1.1;
+      letter-spacing: -0.01em; margin-bottom: 1.25rem;
     }
     .hero-bio {
-      font-size: 0.975rem;
-      color: var(--text-mid);
-      max-width: 500px;
-      margin-bottom: 1.75rem;
-      line-height: 1.7;
+      font-size: 0.975rem; color: var(--text-mid);
+      max-width: 500px; margin-bottom: 1.75rem; line-height: 1.7;
     }
-    .hero-skills {
-      display: flex; flex-wrap: wrap; gap: 0.5rem;
-      margin-bottom: 2rem;
-    }
+    .hero-skills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
     .skill-pill {
-      font-size: 0.72rem;
-      font-weight: 500;
-      background: var(--bg3);
-      border: 1px solid var(--border2);
-      color: var(--text-mid);
-      border-radius: 4px;
-      padding: 3px 9px;
-      letter-spacing: 0.03em;
+      font-size: 0.72rem; font-weight: 500;
+      background: var(--bg3); border: 1px solid var(--border2);
+      color: var(--text-mid); border-radius: 4px; padding: 3px 9px;
     }
     .hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .btn {
       display: inline-flex; align-items: center; gap: 6px;
       font-size: 0.8rem; font-weight: 500;
-      padding: 7px 16px;
-      border-radius: 5px;
-      transition: all 0.15s;
+      padding: 7px 16px; border-radius: 5px; transition: all 0.15s;
     }
-    .btn-green {
-      background: var(--green); color: #0d0f0e;
-      border: 1px solid var(--green);
-    }
+    .btn-green { background: var(--green); color: #0d0f0e; border: 1px solid var(--green); }
     .btn-green:hover { background: var(--green-lt); border-color: var(--green-lt); }
-    .btn-ghost {
-      background: transparent; color: var(--text-mid);
-      border: 1px solid var(--border2);
-    }
+    .btn-ghost { background: transparent; color: var(--text-mid); border: 1px solid var(--border2); }
     .btn-ghost:hover { border-color: var(--text-mid); color: var(--text); }
 
-    .hero-aside {
-      display: flex; flex-direction: column; gap: 0.75rem;
-      padding-top: 0.5rem;
-    }
+    .hero-aside { display: flex; flex-direction: column; gap: 0.75rem; padding-top: 0.5rem; }
     .aside-block {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem 1.1rem;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1rem 1.1rem;
     }
     .aside-label {
-      font-size: 0.68rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-bottom: 0.4rem;
+      font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--text-dim); margin-bottom: 0.4rem;
     }
-    .aside-value {
-      font-size: 0.88rem;
-      color: var(--text-mid);
-    }
+    .aside-value { font-size: 0.88rem; color: var(--text-mid); }
     .aside-value a { color: var(--green); }
     .aside-value a:hover { text-decoration: underline; }
 
-    /* ─── SECTION ─── */
+    /* SECTIONS */
     section { padding: 4rem 0; border-bottom: 1px solid var(--border); }
-    .section-head {
-      display: flex; align-items: baseline; gap: 1rem;
-      margin-bottom: 2.5rem;
-    }
-    h2 {
-      font-family: var(--serif);
-      font-size: 1.55rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-    .section-count {
-      font-size: 0.75rem;
-      color: var(--text-dim);
-      font-variant-numeric: tabular-nums;
-    }
+    .section-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.5rem; }
+    h2 { font-family: var(--serif); font-size: 1.55rem; font-weight: 600; letter-spacing: -0.01em; }
+    .section-count { font-size: 0.75rem; color: var(--text-dim); }
 
-    /* ─── PROJECT CARDS ─── */
-    .project-list { display: flex; flex-direction: column; gap: 1.5px; }
+    /* PROJECT CARDS — vertical layout */
+    .project-list { display: flex; flex-direction: column; gap: 1.5rem; }
 
     .project-card {
       background: var(--bg2);
@@ -201,168 +134,101 @@
     }
     .project-card:hover { border-color: var(--border2); }
 
-    .project-inner {
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      min-height: 200px;
-    }
+    .project-body { padding: 1.75rem 2rem 1.5rem; }
 
-    .project-body {
-      padding: 1.75rem 2rem;
-      display: flex; flex-direction: column;
-    }
     .project-category {
-      font-size: 0.68rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 0.55rem;
+      font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--green); margin-bottom: 0.55rem;
     }
     .project-title {
-      font-family: var(--serif);
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 0.65rem;
-      line-height: 1.25;
+      font-family: var(--serif); font-size: 1.15rem;
+      font-weight: 600; margin-bottom: 0.65rem; line-height: 1.25;
     }
-    .project-title a { transition: color 0.15s; }
     .project-title a:hover { color: var(--green-lt); }
     .project-desc {
-      font-size: 0.875rem;
-      color: var(--text-mid);
-      line-height: 1.6;
-      margin-bottom: auto;
+      font-size: 0.875rem; color: var(--text-mid);
+      line-height: 1.65; margin-bottom: 1.25rem;
     }
-    .project-footer {
-      display: flex; align-items: center; gap: 0.6rem;
-      flex-wrap: wrap;
-      margin-top: 1.25rem;
-    }
+    .project-footer { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
     .stack-tag {
-      font-size: 0.68rem;
-      font-weight: 500;
-      background: var(--bg3);
-      border: 1px solid var(--border2);
-      color: var(--text-dim);
-      border-radius: 3px;
-      padding: 2px 7px;
+      font-size: 0.68rem; font-weight: 500;
+      background: var(--bg3); border: 1px solid var(--border2);
+      color: var(--text-dim); border-radius: 3px; padding: 2px 7px;
     }
     .project-link {
       margin-left: auto;
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: var(--text-dim);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 3px 8px;
-      transition: all 0.15s;
-      white-space: nowrap;
+      font-size: 0.75rem; font-weight: 500;
+      color: var(--text-dim); border: 1px solid var(--border);
+      border-radius: 4px; padding: 3px 8px; transition: all 0.15s;
     }
     .project-link:hover { color: var(--green); border-color: rgba(125,186,138,0.4); }
 
-    /* ─── FIGURE PANEL ─── */
+    /* FIGURES — full width below description */
     .project-figures {
-      border-left: 1px solid var(--border);
+      border-top: 1px solid var(--border);
       display: grid;
-      grid-template-rows: 1fr 1fr;
-      background: #111411;
-      overflow: hidden;
+      background: #0a0c0a;
     }
-    .project-figures.single { grid-template-rows: 1fr; }
-    .fig-slot {
-      overflow: hidden;
-      position: relative;
-    }
-    .fig-slot + .fig-slot { border-top: 1px solid var(--border); }
+    .project-figures.cols-1 { grid-template-columns: 1fr; }
+    .project-figures.cols-2 { grid-template-columns: 1fr 1fr; }
+
+    .fig-slot { overflow: hidden; position: relative; }
+    .fig-slot + .fig-slot { border-left: 1px solid var(--border); }
+
     .fig-slot img {
       width: 100%; height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.4s ease;
-      filter: brightness(0.92) saturate(0.85);
+      object-fit: cover; display: block;
+      max-height: 340px;
+      transition: transform 0.4s ease, filter 0.3s;
+      filter: brightness(0.9) saturate(0.9);
     }
-    .project-card:hover .fig-slot img { transform: scale(1.03); filter: brightness(1) saturate(1); }
+    .project-card:hover .fig-slot img { transform: scale(1.02); filter: brightness(1) saturate(1); }
 
-    /* placeholder when no image provided */
     .fig-placeholder {
-      width: 100%; height: 100%;
+      width: 100%; min-height: 180px;
       display: flex; align-items: center; justify-content: center;
-      background: var(--bg3);
-      color: var(--text-dim);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      background: var(--bg3); color: var(--text-dim);
+      font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase;
     }
 
-    /* ─── PUBLICATIONS ─── */
-    .pub-list { list-style: none; display: flex; flex-direction: column; gap: 1px; }
+    /* PUBLICATIONS */
+    .pub-list { list-style: none; display: flex; flex-direction: column; }
     .pub-item {
-      padding: 1.25rem 0;
-      border-bottom: 1px solid var(--border);
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 1rem;
-      align-items: start;
+      padding: 1.25rem 0; border-bottom: 1px solid var(--border);
+      display: grid; grid-template-columns: 40px 1fr;
+      gap: 1rem; align-items: start;
     }
-    .pub-year-col {
-      font-size: 0.78rem;
-      font-variant-numeric: tabular-nums;
-      color: var(--text-dim);
-      padding-top: 2px;
-      min-width: 36px;
-    }
+    .pub-year-col { font-size: 0.78rem; color: var(--text-dim); padding-top: 2px; }
     .pub-journal {
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 0.25rem;
+      font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      color: var(--green); margin-bottom: 0.25rem;
     }
     .pub-title {
-      font-family: var(--serif);
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.35;
-      margin-bottom: 0.3rem;
+      font-family: var(--serif); font-size: 1rem;
+      font-weight: 400; line-height: 1.35; margin-bottom: 0.3rem;
     }
-    .pub-authors {
-      font-size: 0.82rem;
-      color: var(--text-mid);
-      margin-bottom: 0.55rem;
-    }
+    .pub-authors { font-size: 0.82rem; color: var(--text-mid); margin-bottom: 0.55rem; }
     .pub-links { display: flex; gap: 0.5rem; }
     .pub-chip {
-      font-size: 0.68rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      border: 1px solid var(--border2);
-      border-radius: 3px;
-      padding: 2px 7px;
-      transition: all 0.15s;
+      font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--text-dim); border: 1px solid var(--border2);
+      border-radius: 3px; padding: 2px 7px; transition: all 0.15s;
     }
     .pub-chip:hover { color: var(--green); border-color: rgba(125,186,138,0.4); }
 
-    /* ─── FOOTER ─── */
     footer {
-      padding: 2.5rem 2rem;
-      text-align: center;
-      font-size: 0.78rem;
-      color: var(--text-dim);
+      padding: 2.5rem 2rem; text-align: center;
+      font-size: 0.78rem; color: var(--text-dim);
     }
 
-    /* ─── RESPONSIVE ─── */
     @media (max-width: 720px) {
       .hero-grid { grid-template-columns: 1fr; }
-      .hero-aside { flex-direction: row; flex-wrap: wrap; }
-      .aside-block { flex: 1; min-width: 140px; }
-      .project-inner { grid-template-columns: 1fr; }
-      .project-figures { border-left: none; border-top: 1px solid var(--border); min-height: 180px; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr; }
-      .fig-slot + .fig-slot { border-top: none; border-left: 1px solid var(--border); }
+      .project-figures.cols-2 { grid-template-columns: 1fr; }
+      .fig-slot + .fig-slot { border-left: none; border-top: 1px solid var(--border); }
       nav { padding: 0 1rem; }
       .nav-links { gap: 1rem; }
     }
@@ -370,7 +236,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <span class="nav-brand">Ernest Frimpong Asamoah</span>
   <ul class="nav-links">
@@ -380,7 +245,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="wrap">
     <div class="hero-grid">
@@ -390,12 +254,13 @@
         <p class="hero-bio">
           I build spatial models and global geospatial pipelines to understand
           how land use, biodiversity, and ecosystem services interact across scales.
-          Based in Brisbane. Open to postdoctoral positions.
+          Based in Brisbane. Open to postdoctoral positions worldwide.
         </p>
         <div class="hero-skills">
           <span class="skill-pill">R / terra</span>
           <span class="skill-pill">Spatial modelling</span>
           <span class="skill-pill">Remote sensing</span>
+          <span class="skill-pill">Multinomial regression</span>
           <span class="skill-pill">Causal inference</span>
           <span class="skill-pill">Conservation biology</span>
           <span class="skill-pill">Ecosystem services</span>
@@ -409,17 +274,13 @@
       </div>
       <div class="hero-aside">
         <div class="aside-block" style="display:flex; justify-content:center; padding: 1.25rem;">
-            <img src="photo.jpg" alt="Ernest Frimpong Asamoah" style="width:120px; height:120px; border-radius:50%; object-fit:cover; border: 2px solid var(--border2);">
-            </div>
+          <img src="photo.jpg" alt="Ernest Frimpong Asamoah" style="width:200px;height:200px;border-radius:70%;object-fit:cover;border:2px solid var(--border2);">
+        </div>
         <div class="aside-block">
           <p class="aside-label">Affiliation</p>
-          <p class="aside-value">Queensland University of Technology<br>School of Biology &amp; Environment Sciences</p>
-        </div>
-        <div class="aside-block">
+          <p class="aside-value">Queensland University of Technology</p>
           <p class="aside-label">Contact</p>
           <p class="aside-value"><a href="mailto:ef.asamoah@qut.edu.au">ef.asamoah@qut.edu.au</a></p>
-        </div>
-        <div class="aside-block">
           <p class="aside-label">ORCID</p>
           <p class="aside-value"><a href="https://orcid.org/0000-0003-0712-5642" target="_blank">0000-0003-0712-5642</a></p>
         </div>
@@ -428,7 +289,6 @@
   </div>
 </section>
 
-<!-- MODELLING PROJECTS -->
 <section id="modelling">
   <div class="wrap">
     <div class="section-head">
@@ -437,125 +297,101 @@
     </div>
     <div class="project-list">
 
-      <!-- Project 1 -->
       <div class="project-card">
-        <div class="project-inner">
-          <div class="project-body">
-            <p class="project-category">Land use · Global</p>
-            <h3 class="project-title">
-              <a href="#">Global land sparing / sharing classification (2000–2020)</a>
-            </h3>
-            <p class="project-desc">
-              Multi-resolution global land-use typology spanning two decades, classifying landscapes
-              into five classes (Natural-dominant, Agricultural-dominant, Sharing, Sparing, Neither)
-              using beta distribution fitting on paired biodiversity-yield gradients.
-            </p>
-            <div class="project-footer">
-              <span class="stack-tag">R / terra</span>
-              <span class="stack-tag">nnet::multinom</span>
-              <span class="stack-tag">MuMIn</span>
-              <span class="stack-tag">fitdistrplus</span>
-              <a href="#" class="project-link">View paper →</a>
-            </div>
+        <div class="project-body">
+          <p class="project-category">Land use · Global</p>
+          <h3 class="project-title"><a href="#">Global land sparing / sharing classification framework </a></h3>
+          <p class="project-desc">
+            Multi-resolution global land-use typology spanning two decades, classifying landscapes
+            into four classes (Natural-dominant, agricultural land dominant, sharing, and sparing)
+            using beta distribution fitting on paired biodiversity-yield gradients.
+          </p>
+          <div class="project-footer">
+            <span class="stack-tag">R / terra</span>
+            <span class="stack-tag">nnet::multinom</span>
+            <span class="stack-tag">MuMIn</span>
+            <span class="stack-tag">fitdistrplus</span>
+            <a href="#" class="project-link">View paper →</a>
           </div>
-          <div class="project-figures">
-            <!-- Replace src with paths to your actual output figures -->
-            <div class="fig-slot">
-              <img src="figures/sparing_sharing_map.png" alt="Global land sparing/sharing map">
-            </div>
         </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-inner">
-          <div class="project-body">
-            <p class="project-category">Ecosystem services · Trade</p>
-            <h3 class="project-title">
-              <a href="#">International trade mediating nature's contributions to people</a>
-            </h3>
-            <p class="project-desc">
-              Integrated trade models and Nature's Contributions to People (NCP) framework to quantify how
-              global commodity trade transfers ecosystem service burdens across national boundaries.
-              Subnational analysis revealed that 77–89% of NCP variance lies <em>within</em> countries
-              rather than between them — challenging country-level aggregation common in global assessments.
-            </p>
-            <div class="project-footer">
-              <span class="stack-tag">R / terra</span>
-              <span class="stack-tag">lme4</span>
-              <span class="stack-tag">MRIO analysis</span>
-              <a href="#" class="project-link">Under review →</a>
-            </div>
-          </div>
-          <div class="project-figures">
-            <div class="fig-slot">
-              <div class="fig-placeholder">figure 1 · NCP trade flows</div>
-            </div>
-            <div class="fig-slot">
-              <div class="fig-placeholder">figure 2 · subnational variance</div>
-            </div>
+        <div class="project-figures cols-1">
+          <div class="fig-slot">
+            <img src="figures/sparing_sharing_map.png" alt="Global land sparing/sharing map">
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
       <div class="project-card">
-        <div class="project-inner">
-          <div class="project-body">
-            <p class="project-category">Causal inference · Agriculture</p>
-            <h3 class="project-title">
-              <a href="#">Bivariate causal inference for land-use intensity &amp; conservation effort</a>
-            </h3>
-            <p class="project-desc">
-              Joint GPS causal inference framework using stabilised inverse-probability weights (IPW)
-              for two simultaneous continuous treatments — agricultural intensity and conservation effort —
-              to disentangle their independent and interactive effects on biodiversity outcomes
-              at global scale.
-            </p>
-            <div class="project-footer">
-              <span class="stack-tag">R</span>
-              <span class="stack-tag">WeightIt</span>
-              <span class="stack-tag">IPW / GPS</span>
-              <a href="#" class="project-link">Code →</a>
-            </div>
+        <div class="project-body">
+          <p class="project-category">Ecosystem services · Trade</p>
+          <h3 class="project-title"><a href="#">International trade mediating nature's contributions to people</a></h3>
+          <p class="project-desc">
+            Integrated trade models and Nature's Contributions to People (NCP) framework to quantify how
+            global commodity trade transfers ecosystem service burdens across national boundaries.
+            Subnational analysis revealed that 77–89% of NCP variance lies <em>within</em> countries
+            rather than between them — challenging country-level aggregation common in global assessments.
+          </p>
+          <div class="project-footer">
+            <span class="stack-tag">R / terra</span>
+            <span class="stack-tag">lme4</span>
+            <span class="stack-tag">MRIO analysis</span>
+            <a href="#" class="project-link">Under review →</a>
           </div>
-          <div class="project-figures single">
-            <div class="fig-slot">
-              <div class="fig-placeholder">figure · IPW balance diagnostics</div>
-            </div>
+        </div>
+        <div class="project-figures cols-2">
+          <div class="fig-slot">
+            <div class="fig-placeholder">figure 1 · NCP trade flows</div>
+          </div>
+          <div class="fig-slot">
+            <div class="fig-placeholder">figure 2 · subnational variance</div>
           </div>
         </div>
       </div>
 
-      <!-- Project 4 -->
       <div class="project-card">
-        <div class="project-inner">
-          <div class="project-body">
-            <p class="project-category">Climate connectivity · Africa</p>
-            <h3 class="project-title">
-              <a href="#">Climate velocity network for species movement in Africa</a>
-            </h3>
-            <p class="project-desc">
-              Directed network framework modelling potential species movement corridors under
-              climate change across Africa. Used Voronoi tessellations, queen contiguity graphs,
-              and least-cost path algorithms to build a climate-velocity-weighted directed network,
-              enabling graph-theoretic analysis of landscape permeability and bottlenecks.
-            </p>
-            <div class="project-footer">
-              <span class="stack-tag">R / terra</span>
-              <span class="stack-tag">spdep</span>
-              <span class="stack-tag">gdistance</span>
-              <span class="stack-tag">igraph</span>
-              <a href="#" class="project-link">Code →</a>
-            </div>
+        <div class="project-body">
+          <p class="project-category">Causal inference · Agriculture</p>
+          <h3 class="project-title"><a href="#">Bivariate causal inference for land-use intensity &amp; conservation effort</a></h3>
+          <p class="project-desc">
+            Joint GPS causal inference framework using stabilised inverse-probability weights (IPW)
+            for two simultaneous continuous treatments — agricultural intensity and conservation effort —
+            to disentangle their independent and interactive effects on biodiversity outcomes at global scale.
+          </p>
+          <div class="project-footer">
+            <span class="stack-tag">R</span>
+            <span class="stack-tag">WeightIt</span>
+            <span class="stack-tag">IPW / GPS</span>
+            <a href="#" class="project-link">Code →</a>
           </div>
-          <div class="project-figures">
-            <div class="fig-slot">
-              <img src="figures/connectivity.png" alt="Climate connecivity">
-            </div>
-            <div class="fig-slot">
-              <div class="fig-placeholder">figure 2 · least-cost paths</div>
-            </div>
+        </div>
+        <div class="project-figures cols-1">
+          <div class="fig-slot">
+            <div class="fig-placeholder">figure · IPW balance diagnostics</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-body">
+          <p class="project-category">Climate connectivity · Africa</p>
+          <h3 class="project-title"><a href="#">Climate velocity network for species movement in Africa</a></h3>
+          <p class="project-desc">
+            Directed network framework modelling potential species movement corridors under climate change
+            across Africa. Used Voronoi tessellations, queen contiguity graphs, and least-cost path
+            algorithms to build a climate-velocity-weighted directed network, enabling graph-theoretic
+            analysis of landscape permeability and bottlenecks.
+          </p>
+          <div class="project-footer">
+            <span class="stack-tag">R / terra</span>
+            <span class="stack-tag">spdep</span>
+            <span class="stack-tag">gdistance</span>
+            <span class="stack-tag">igraph</span>
+            <a href="#" class="project-link">Code →</a>
+          </div>
+        </div>
+        <div class="project-figures cols-1">
+          <div class="fig-slot">
+            <img src="figures/connectivity.png" alt="Cost connectivity">
           </div>
         </div>
       </div>
@@ -564,7 +400,6 @@
   </div>
 </section>
 
-<!-- MAPPING PROJECTS -->
 <section id="mapping">
   <div class="wrap">
     <div class="section-head">
@@ -574,60 +409,51 @@
     <div class="project-list">
 
       <div class="project-card">
-        <div class="project-inner">
-          <div class="project-body">
-            <p class="project-category">Protected areas · Climate</p>
-            <h3 class="project-title">
-              <a href="#">Climate velocity exposure of global protected area networks</a>
-            </h3>
-            <p class="project-desc">
-              Global analysis of protected area exposure to climate velocities using a CORDEX
-              ensemble of regional climate projections. Quantified which protected areas face
-              velocities exceeding dispersal thresholds, identifying climate refugia and
-              high-exposure regions requiring corridor investments.
-              Published in <em>Nature Climate Change</em>.
-            </p>
-            <div class="project-footer">
-              <span class="stack-tag">R / terra</span>
-              <span class="stack-tag">CORDEX ensemble</span>
-              <span class="stack-tag">Area-based managment</span>
-              <a href="#" class="project-link">Paper →</a>
-            </div>
+        <div class="project-body">
+          <p class="project-category">Protected areas · Climate</p>
+          <h3 class="project-title"><a href="#">Climate velocity exposure of global protected area networks</a></h3>
+          <p class="project-desc">
+            Global analysis of protected area exposure to climate velocities using a CORDEX
+            ensemble of regional climate projections. Quantified which protected areas face
+            velocities exceeding dispersal thresholds, identifying climate refugia and
+            high-exposure regions requiring corridor investments. Published in <em>Nature Climate Change</em>.
+          </p>
+          <div class="project-footer">
+            <span class="stack-tag">R / terra</span>
+            <span class="stack-tag">CORDEX ensemble</span>
+            <span class="stack-tag">Mollweide projection</span>
+            <a href="#" class="project-link">Paper →</a>
           </div>
-          <div class="project-figures">
-            <div class="fig-slot">
-              <img src="figures/velocity_map.png" alt="Climate velocity">
-            </div>
-            <div class="fig-slot">
-              <img src="figures/prected_area_exposure.png" alt="Bivariate Exposure">
-            </div>
+        </div>
+        <div class="project-figures cols-2">
+          <div class="fig-slot">
+            <img src="figures/velocity_map.png" alt="Climate Velocity Map">
+          </div>
+          <div class="fig-slot">
+            <img src="figures/prected_area_exposure.png" alt="PA Exposure">
           </div>
         </div>
       </div>
 
       <div class="project-card">
-        <div class="project-inner">
-          <div class="project-body">
-            <p class="project-category">Agricultural intensity · Global</p>
-            <h3 class="project-title">
-              <a href="#">Global agricultural intensity raster mosaic</a>
-            </h3>
-            <p class="project-desc">
-              Multi-source raster pipeline producing a harmonised global agricultural intensity
-              layer at 300m resolution, mosaicked and re-projected to Mollweide.
-            </p>
-            <div class="project-footer">
-              <span class="stack-tag">R / terra</span>
-              <span class="stack-tag">patchwork</span>
-              <span class="stack-tag">ggplot2</span>
-              <span class="stack-tag">cowplot</span>
-              <a href="#" class="project-link">Code →</a>
-            </div>
+        <div class="project-body">
+          <p class="project-category">Agricultural intensity · Global</p>
+          <h3 class="project-title"><a href="#">Global agricultural intensity raster mosaic</a></h3>
+          <p class="project-desc">
+            Multi-source raster pipeline producing a harmonised global agricultural intensity
+            layer at 5 arcmin resolution, mosaicked and re-projected to Mollweide.
+          </p>
+          <div class="project-footer">
+            <span class="stack-tag">R / terra</span>
+            <span class="stack-tag">patchwork</span>
+            <span class="stack-tag">ggplot2</span>
+            <span class="stack-tag">cowplot</span>
+            <a href="#" class="project-link">Code →</a>
           </div>
-          <div class="project-figures single">
-            <div class="fig-slot">
-              <img src="figures/intensity.png" alt="Intensity mosaic">
-            </div>
+        </div>
+        <div class="project-figures cols-1">
+          <div class="fig-slot">
+            <img src="figures/intensity.png" alt="Agricultural Intensity">
           </div>
         </div>
       </div>
@@ -636,14 +462,12 @@
   </div>
 </section>
 
-<!-- PUBLICATIONS -->
 <section id="publications">
   <div class="wrap">
     <div class="section-head">
       <h2>Selected publications</h2>
     </div>
     <ul class="pub-list">
-
       <li class="pub-item">
         <span class="pub-year-col">2021</span>
         <div>
@@ -657,12 +481,11 @@
           </div>
         </div>
       </li>
-
       <li class="pub-item">
         <span class="pub-year-col">2022</span>
         <div>
           <p class="pub-journal">Current Biology</p>
-          <p class="pub-title">Land use and climate risk assessment for Earth’s remaining wilderness</p>
+          <p class="pub-title">Land use and climate risk assessment for Earth's remaining wilderness</p>
           <p class="pub-authors"><strong>E.F. Asamoah</strong>, M. Di Marco, J.E.M. Watson, L.J. Beaumont, O. Venter, J.M. Maina</p>
           <div class="pub-links">
             <a href="#" class="pub-chip">PDF</a>
@@ -670,7 +493,6 @@
           </div>
         </div>
       </li>
-
       <li class="pub-item">
         <span class="pub-year-col">2022</span>
         <div>
@@ -683,7 +505,6 @@
           </div>
         </div>
       </li>
-
       <li class="pub-item">
         <span class="pub-year-col">2022</span>
         <div>
@@ -696,7 +517,6 @@
           </div>
         </div>
       </li>
-
     </ul>
   </div>
 </section>
